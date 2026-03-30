@@ -11,6 +11,7 @@ body {
     height: 100px;
     width: 100px;
     transform: rotate(-45deg) scale(1);
+    animation: pulsar 1s ease infinite;
 }
 .pulsante:after{
     background: rgb(202, 60, 138);
@@ -31,4 +32,16 @@ body {
     height: 100px;
     width: 100px;
     border-radius: 50%;
+}
+
+@keyframes pulsar{
+    0%{
+        transform: rotate(-45deg) scale(1);
+    }
+    50%{
+        transform: rotate(-45deg) scale(1.5);
+    }
+    100%{
+        transform: rotate(-45deg) scale(1);
+    }
 }
